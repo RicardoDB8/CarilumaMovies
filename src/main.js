@@ -1,5 +1,7 @@
 // Data
 
+const language = window.navigator.language;
+
 const api = axios.create({
   baseURL: 'https://api.themoviedb.org/3/',
   headers: {
@@ -7,6 +9,7 @@ const api = axios.create({
   },
   params: {
     'api_key': API_KEY,
+    "language": navigator.language 
   },
 });
 
